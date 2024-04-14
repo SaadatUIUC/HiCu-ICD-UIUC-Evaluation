@@ -3,20 +3,12 @@ This repo contains code for our MLHC 2022 paper [HiCu: Leveraging Hierarchy for 
 
 Setup
 -----
-Install the following packages to run the code in this repository:
-* gensim==4.1.2
-* nltk==3.5
-* numpy==1.18.1
-* pandas==1.0.0
-* scikit_learn==1.1.1
-* scipy==1.4.1
-* torch==1.7.1
-* tqdm==4.62.3
-* transformers==4.5.1
 
-```bash
-pip install -r requirements.txt
-```
+For the best experience setting up the project, I recommend Anaconda which can be downloaded from [here](https://www.anaconda.com/).
+
+Use the provided `environment.yml` file by executing the following command:
+
+```conda env create -f environment.yml```
 
 Data Preprocessing
 -----
