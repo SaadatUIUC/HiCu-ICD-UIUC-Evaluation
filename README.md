@@ -52,6 +52,8 @@ runs\run_multirescnn_hicua.bat
 ```
 2. For LAAT (Bi-LSTM) models, switch to `LAAT` branch and use the training configs in the root folder.
 
+Upon successful running of the models, you should be able to relevant files in the respective model file, e.g. `.pth` files in `RACReader_HierarchicalHyperbolic_Apr_11_11_04_54`
+
 Acknowledgement
 -----
 A large portion of the code in this repository is borrowed from [foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network
