@@ -1,16 +1,21 @@
 # HiCu-ICD
 This repo contains code for our MLHC 2022 paper [HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding](https://arxiv.org/abs/2208.02301).
 
-Setup
------
+### Setting up the Environment Locally:
 
-For the best experience setting up the project, I recommend Anaconda which can be downloaded from [here](https://www.anaconda.com/).
+For best experience setting up the project, I recommend Anaconda, which can be downloaded from the following link: [Anaconda](https://www.anaconda.com/
+)
 
-Use the provided `environment.yml` file by executing the following command:
 
-```conda env create -f environment.yml```
+### Requirements
 
-Data Preprocessing
+Use the provided `environment.yml` to setup your local environment.
+
+Run `conda env create -f environment.yml` to install the required libraries
+Run `conda activate hicu_env`
+Run `python3` and run `import nltk` and `nltk.download('punkt')` for tokenization 
+
+### Data Preprocessing
 -----
 We use MIMIC-III for model training and evaluation. We use the same data preprocessing code as [MultiResCNN](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network). To set up the dataset, place the MIMIC-III files into `/data` as shown below:
 ```
@@ -35,9 +40,16 @@ After setting up the files, run the following command to preprocess the data:
 python preprocess_mimic3.py
 ```
 
-Training
+### Training
 -----
 1. See files under `/runs` for training configs for MultiResCNN and RAC models.
+
+For example: 
+
+While in the root directory of the project and having activated the `hicu_env`.
+```
+runs\run_multirescnn_hicua.bat
+```
 2. For LAAT (Bi-LSTM) models, switch to `LAAT` branch and use the training configs in the root folder.
 
 Acknowledgement

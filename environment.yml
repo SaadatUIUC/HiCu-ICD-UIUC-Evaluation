@@ -8,11 +8,14 @@ dependencies:
   - certifi=2024.2.2=py38haa95532_0
   - cudatoolkit=11.3.1=h59b6b97_2
   - intel-openmp=2023.1.0=h59b6b97_46320
+  - krb5=1.20.1=h5b6d351_0
   - libffi=3.4.4=hd77b12b_0
+  - libpq=12.17=h906ac69_0
   - libuv=1.44.2=h2bbff1b_0
   - mkl=2023.1.0=h6b88ed4_46358
   - openssl=3.0.13=h2bbff1b_0
   - pip=23.3.1=py38haa95532_0
+  - psycopg2=2.9.9=py38h2bbff1b_0
   - python=3.8.19=h1aa4202_0
   - pytorch=1.12.1=py3.8_cuda11.3_cudnn8_0
   - pytorch-mutex=1.0=cuda
@@ -23,6 +26,7 @@ dependencies:
   - vc=14.2=h21ff451_1
   - vs2015_runtime=14.27.29016=h5e58377_2
   - wheel=0.41.2=py38haa95532_0
+  - zlib=1.2.13=h8cc25b3_0
   - pip:
       - charset-normalizer==3.3.2
       - click==8.1.7
